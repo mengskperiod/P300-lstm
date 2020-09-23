@@ -1,5 +1,7 @@
 # P300-lstm
 ##中文部分
+
+
 这个项目主要时华为杯2020年B题的一个参考，有两大部分，一部分时数据的预处理
 ，另一部分时用LSTM网络去识别
 数据来源链接: https://pan.baidu.com/s/19WKdUB9dc8x3BqAqL7wtKA 提取码: 9mkm 
@@ -23,4 +25,48 @@ Ensembles Method这篇文章类似的思路进行，具体的m文件为LSTM_xiao
 
 如果有相关的疑问或者间接可以联系mengskfenix@hotmail.com
 
-##
+##ENGLISH
+
+This project is mainly a reference for Huawei cup 2020 question B. There are two parts, one part is data preprocessing
+
+The other part is identified by LSTM network
+
+Data source link: https://pan.baidu.com/s/19WKdUB9dc8x3BqAqL7wtKA Extraction code: 9km
+
+This file is the original data, downloaded through Baidu disk, and then run main2 and main3 for data preprocessing
+
+
+
+In the part of data preprocessing, we use three parts. The first part is using band-pass filter bandome_ filter
+
+This file is filtered, and the data window is segmented with 150 sampling points (640ms), and then used
+
+Haar wavelet decomposition
+
+
+
+The second part is to use LSTM network for prediction. In this part, we use single trial P300 classification using
+
+Convolutional LSTM and Deep Learning
+
+This article is similar to the idea of ensembles method. The specific m file is LSTM_ xiaoguo.m
+
+Data sources are links: https://pan.baidu.com/s/1XvwtNlf6ovg5NG9sfIAoxw Extraction code: mx1a
+
+These are two different training sets and test sets
+
+We've built the same thing lstm.py In this part, we use the LSTM built by keras. There is no essential difference
+
+
+
+However, in this problem, although we follow the practice of the above paper, but our effect is not ideal, the recognition rate is still not high enough
+
+We do not have a good solution to this problem at present
+
+
+
+The follow-up expectation can do a GaN, do a reinforcement study, see if the effect can be better
+
+
+
+If there is any related question or indirect contact mengskfenix@hotmail.com
